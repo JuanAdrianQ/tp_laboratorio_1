@@ -8,8 +8,18 @@
 #ifndef OPERACIONES_H_
 #define OPERACIONES_H_
 
-void funcionKilometros(void);
-void funcionPrecioVuelos(void); //Prototipos
+//Prototipos
+ float CalculoTarjetaDebitoLatam(int);
+ float CalculoTarjetaDebitoAerolineas(int);
+ float CalculoTarjetaCreditoLatam(int);
+ float CalculoTarjetaCreditoAerolineas(int);
+ float CalculoBitcoinLatam(int);
+ float CalculoBitcoinAerolineas(int);
+ float CalculoPrecioUnitarioLatam(int,int);
+ float CalculoPrecioUnitarioAerolineas(int,int);
+ float CalculoDiferenciaLatamAerolineas(int,int);
+
+
 
 
 

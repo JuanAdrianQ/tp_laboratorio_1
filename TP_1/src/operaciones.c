@@ -8,46 +8,91 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void funcionKilometros(void)
+
+float CalculoTarjetaDebitoLatam(int precioLatam)
 {
-	int kilometrosIngresados;
+	int descuento;
+	float precioFinalDebito;
 
-	printf("Ingrese la cantidad de kilometros a recorrer: ");
-	scanf("%d",&kilometrosIngresados);
-	printf("1. Ingresar Kilómetros: (km = %d)\n",kilometrosIngresados);
+	descuento = 10;
 
+	precioFinalDebito = precioLatam - (precioLatam * descuento / 100);
+
+
+	return precioFinalDebito;
 }
-
-void funcionPrecioVuelos(void)
+float CalculoTarjetaDebitoAerolineas(int precioAerolineas)
 {
-	int opcion2;
-	int precioAerolineasArgentinas;
-	int precioAerolineasLatam;
-	int opcion3;
+	int descuento;
+	float precioFinalDebitoAerolineas;
 
-	printf("\n2. Ingresar Precio de Vuelos: ");
-			printf("\nDonde desea ingresar el precio de vuelo: "
-					"\n1. Aerolineas Argetinas"
-					"\n2. Latam\n");
-			scanf("%d",&opcion2);
-			if(opcion2 == 1)
-			{
-				printf("-Precio vuelo Aerolineas: ");
-				scanf("%d",&precioAerolineasArgentinas);
+	descuento = 10;
 
-			}
-			printf("\n2. Ingresar Precio de Vuelos: ");
-			printf("\nDonde desea ingresar el precio de vuelo: "
-							"\n1. Aerolineas Argetinas"
-							"\n2. Latam\n");
-			scanf("%d",&opcion3);
-			if(opcion3 == 2)
-			{
-				printf("-Precio vuelo Latam: ");
-				scanf("%d",&precioAerolineasLatam);
+	precioFinalDebitoAerolineas = precioAerolineas - (precioAerolineas * descuento / 100);
 
-			}
-			printf("Ingresar Precio de Vuelos: (Aerolineas = %d,Latam = %d)",precioAerolineasArgentinas,precioAerolineasLatam);
+	return precioFinalDebitoAerolineas;
+}
+float CalculoTarjetaCreditoLatam(int precioLatam)
+{
+	int interes;
+	float precioFinalCreditoLatam;
 
+
+	interes = 25;
+
+	precioFinalCreditoLatam = precioLatam + (precioLatam * interes / 100);
+
+	return precioFinalCreditoLatam;
+}
+float CalculoTarjetaCreditoAerolineas(int precioAerolineas)
+{
+	int interes;
+	float precioFinalCreditoAerolineas;
+
+	interes = 25;
+
+	precioFinalCreditoAerolineas = precioAerolineas + (precioAerolineas * interes / 100);
+
+	return precioFinalCreditoAerolineas;
+}
+float CalculoBitcoinLatam(int precioLatam)
+{
+	float precioBitcoinLatam;
+
+	precioBitcoinLatam = precioLatam * 1 / 4606954.55;
+
+	return precioBitcoinLatam;
+}
+float CalculoBitcoinAerolineas(int precioAerolineas)
+{
+	float precioBitcoinAerolineas;
+
+	precioBitcoinAerolineas = precioAerolineas * 1 / 4606954.55;
+
+	return precioBitcoinAerolineas;
+}
+float CalculoPrecioUnitarioLatam(int precioLatam, int kilometrosIngresados)
+{
+	float precioUnitarioLatam;
+
+	precioUnitarioLatam = precioLatam * kilometrosIngresados;
+
+	return precioUnitarioLatam;
+}
+float CalculoPrecioUnitarioAerolineas(int precioAerolineas,int kilometrosIngresados)
+{
+	float precioUnitarioAerolineas;
+
+	precioUnitarioAerolineas = precioAerolineas * kilometrosIngresados;
+
+	return precioUnitarioAerolineas;
+}
+float CalculoDiferenciaLatamAerolineas(int precioLatam,int precioAerolineas)
+{
+	float diferenciaPrecioLatamAerolineas;
+
+	diferenciaPrecioLatamAerolineas = precioLatam - precioAerolineas;
+
+	return diferenciaPrecioLatamAerolineas;
 }
 
