@@ -12,7 +12,7 @@
  float CargaForzadaTarjetaDebitoAerolineas(int precioForzadoAerolineas)
  {
 	 float precioTarjetaDebitoAerolineas;
-	 int descuento;
+	 float descuento;
 
 	 descuento = 10;
 
@@ -23,7 +23,7 @@
  float CargaForzadaTarjetaDebitoLatam(int precioForzadoLatam)
  {
 	 float precioTarjetaDebitoLatam;
-	 int descuento;
+	 float descuento;
 
 	 descuento = 10;
 
@@ -34,7 +34,7 @@
  }
  float CargaForzadaTarjetaCreditoLatam(int precioForzadoLatam)
  {
-	 int interes;
+	 float interes;
 	 float precioTarjetaCreditoLatam;
 
 	 interes = 25;
@@ -45,7 +45,7 @@
  }
  float CargaForzadaTarjetaCreditoAerolineas(int precioForzadoAerolineas)
  {
-	 int interes;
+	 float interes;
 	 float precioTarjetaCreditoAerolineas;
 
 	 interes = 25;

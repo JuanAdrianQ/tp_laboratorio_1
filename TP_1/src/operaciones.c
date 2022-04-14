@@ -11,7 +11,7 @@
 
 float CalculoTarjetaDebitoLatam(int precioLatam)
 {
-	int descuento;
+	float descuento;
 	float precioFinalDebito;
 
 	descuento = 10;
@@ -23,7 +23,7 @@ float CalculoTarjetaDebitoLatam(int precioLatam)
 }
 float CalculoTarjetaDebitoAerolineas(int precioAerolineas)
 {
-	int descuento;
+	float descuento;
 	float precioFinalDebitoAerolineas;
 
 	descuento = 10;
@@ -34,7 +34,7 @@ float CalculoTarjetaDebitoAerolineas(int precioAerolineas)
 }
 float CalculoTarjetaCreditoLatam(int precioLatam)
 {
-	int interes;
+	float interes;
 	float precioFinalCreditoLatam;
 
 
@@ -46,12 +46,12 @@ float CalculoTarjetaCreditoLatam(int precioLatam)
 }
 float CalculoTarjetaCreditoAerolineas(int precioAerolineas)
 {
-	int interes;
+	float interes;
 	float precioFinalCreditoAerolineas;
 
 	interes = 25;
 
-	precioFinalCreditoAerolineas = precioAerolineas + (precioAerolineas * interes / 100);
+	precioFinalCreditoAerolineas = (float)precioAerolineas + (precioAerolineas * interes / 100);
 
 	return precioFinalCreditoAerolineas;
 }
