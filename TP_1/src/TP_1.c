@@ -21,12 +21,14 @@ int main(void)
 	float precioForzadoLatam;
 	float precioForzadoAerolineas;
 
+
 	kilometrosIngresados = 0;
 	precioAerolineas = 0;
 	precioLatam = 0;
 	cantidadKilometros = 5064;
 	precioForzadoLatam = 2102354.67;
 	precioForzadoAerolineas = 1320542.22;
+
 
 	while(opcion != 6)
 	{
@@ -68,7 +70,7 @@ int main(void)
 						}
 				break;
 			case 3:
-				if(precioAerolineas > 0 || precioLatam > 0)
+				if(precioAerolineas > 0 && precioLatam > 0 && kilometrosIngresados > 0)
 				{
 					printf("\na) Tarjeta de débito\n"
 						"b) Tarjeta de crédito\n"
@@ -95,13 +97,13 @@ int main(void)
 				}
 				else
 				{
-					printf("\nNo se pudo realizar el calculo.Por favor ingrese precios del vuelo!!!\n");
+					printf("\nNo se pudo realizar el calculo.Por favor ingrese bien los precios del vuelo o cantidad de kilometros!!!\n");
 
 				}
 
 				break;
 			case 4:
-				if(precioAerolineas > 0 || precioLatam > 0)
+				if(precioAerolineas > 0 && precioLatam > 0 && kilometrosIngresados > 0)
 				{
 					printf("\nLatam:\n"
 					"a)Precio con tarjeta de débito: $ %.2f\n"
@@ -125,7 +127,7 @@ int main(void)
 				}
 				else
 				{
-					printf("\nNo se pudo informar los resultados.Por favor ingrese precios del vuelo!!!\n");
+					printf("\nNo se pudo informar los resultados.Por favor asegurese de que ingreso precios del vuelo o cantidad de kilometros!!!\n");
 				}
 				break;
 			case 5:
