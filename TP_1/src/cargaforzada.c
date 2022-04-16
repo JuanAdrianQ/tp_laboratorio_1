@@ -74,7 +74,7 @@
  {
 	 float precioUnitarioForzadoLatam;
 
-	 precioUnitarioForzadoLatam = (float)precioForzadoLatam * cantidadKilometros;
+	 precioUnitarioForzadoLatam = (float)precioForzadoLatam / cantidadKilometros;
 
 	 return precioUnitarioForzadoLatam;
  }
@@ -82,7 +82,7 @@
  {
 	 float precioUnitarioForzadoAerolineas;
 
-	 precioUnitarioForzadoAerolineas = (float)precioForzadoAerolineas * cantidadKilometros;
+	 precioUnitarioForzadoAerolineas = (float)precioForzadoAerolineas / cantidadKilometros;
 
 	 return precioUnitarioForzadoAerolineas;
  }

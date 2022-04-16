@@ -75,7 +75,7 @@ float CalculoPrecioUnitarioLatam(int precioLatam, int kilometrosIngresados)
 {
 	float precioUnitarioLatam;
 
-	precioUnitarioLatam = precioLatam * kilometrosIngresados;
+	precioUnitarioLatam = precioLatam / kilometrosIngresados;
 
 	return precioUnitarioLatam;
 }
@@ -83,7 +83,7 @@ float CalculoPrecioUnitarioAerolineas(int precioAerolineas,int kilometrosIngresa
 {
 	float precioUnitarioAerolineas;
 
-	precioUnitarioAerolineas = precioAerolineas * kilometrosIngresados;
+	precioUnitarioAerolineas = precioAerolineas / kilometrosIngresados;
 
 	return precioUnitarioAerolineas;
 }
