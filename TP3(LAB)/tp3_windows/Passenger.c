@@ -275,11 +275,7 @@ void Passenger_printOne(Passenger* this)
 										}
 
 									}
-<<<<<<< HEAD
-									printf("%-10d %-15s %-15s %-15.2f %-15s %-15s %-15s\n",idPasajero,nombrePasajero,apellidoPasajero,precio,codigoVuelo,tipoPasajeroChar,estadoVuelo);
-=======
 									printf("\n%-10d %-15s %-15s %-15.2f %-15s %-15s %-15s\n",idPasajero,nombrePasajero,apellidoPasajero,precio,codigoVuelo,tipoPasajeroChar,estadoVuelo);
->>>>>>> 2f8a6c5 (TP3-Recuperatorio)
 
 								}
 							}
